@@ -15,7 +15,7 @@ var getParams = function (url) {
 };
 var params = getParams(window.location.href);
 console.log(params.go);
-window.location.replace(params.go+'?donasi=info');
+window.location.replace(params.go+'?donasi='+params.donasi);
 </script>
 </head>
 <body>

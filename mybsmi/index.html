@@ -680,50 +680,32 @@
 
 
 
-<!--
-            <div class="row margin-horizontal">
-              <div class="col-100 margin-top">
+
+            <div class="row margin-horizontal margin-bottom">
+              <div class="col-100 medium-66 margin-top">
                 <div class="card data-table">
-                  <div class="card-header">Stats by Department</div>
+                  <div class="card-header">Rekapitulasi Relawan</div>
                   <div class="card-content">
                     <table>
                       <thead>
                         <tr>
-                          <th class="label-cell">Department</th>
-                          <th class="numeric-cell">Clients</th>
-                          <th class="numeric-cell">Sales</th>
-                          <th class="numeric-cell">Profit</th>
+                          <th class="label-cell">Cabang</th>
+                          <th class="numeric-cell">Medis</th>
+                          <th class="numeric-cell">Non Medis</th>
+                          <th class="numeric-cell">Total</th>
                         </tr>
                       </thead>
                       <tbody>
                         <tr>
-                          <td class="label-cell">New York</td>
-                          <td class="numeric-cell">159</td>
+                          <td class="label-cell">BSMI Kota Surabaya</td>
+                          <td class="numeric-cell">1</td>
                           <td class="numeric-cell">24</td>
-                          <td class="numeric-cell">$4,890</td>
-                        </tr>
-                        <tr>
-                          <td class="label-cell">London</td>
-                          <td class="numeric-cell">237</td>
-                          <td class="numeric-cell">37</td>
-                          <td class="numeric-cell">$9,740</td>
-                        </tr>
-                        <tr>
-                          <td class="label-cell">Beijing</td>
-                          <td class="numeric-cell">262</td>
-                          <td class="numeric-cell">24</td>
-                          <td class="numeric-cell">$6,700</td>
-                        </tr>
-                        <tr>
-                          <td class="label-cell">Tokyo</td>
-                          <td class="numeric-cell">120</td>
-                          <td class="numeric-cell">18</td>
-                          <td class="numeric-cell">$3,200</td>
+                          <td class="numeric-cell">1000</td>
                         </tr>
                       </tbody>
                     </table>
                     <div class="data-table-footer">
-                      <div class="data-table-rows-select">
+                      <!--<div class="data-table-rows-select">
                         Rows per page:
                         <div class="input input-dropdown input-with-value">
                           <select class="input-with-value">
@@ -742,14 +724,14 @@
                         <a href="#" class="link">
                           <i class="icon icon-next color-gray"></i>
                         </a>
-                      </div>
+                      </div>-->
                     </div>
                   </div>
 
                 </div>
               </div>
             </div>
--->
+
 
 
 <!--
@@ -1284,7 +1266,7 @@
   <div style="background:#fff;display: flex;flex-direction:column;margin: auto;align-items: center;justify-content: center;padding:20px 20px;">
     <img src="https://1.bp.blogspot.com/-I9V1NyLtG68/XmJRZ_RhTJI/AAAAAAAADgI/wJiuL0Wnjvc2jyoV8AMRsIp1YvSQs1QXwCLcBGAsYHQ/s1600/Logo%2BBSMI%2B%2528vector%2529.png" style="width:200px;">
     <p style="font-size:16px;font-weight:bold;text-align:center;width:300px;margin-top:15px;margin-bottom:2px;">MyBSMI</p>
-    <p style="font-size:14px;font-weight:normal;text-align:center;width:300px;margin-top:0px;margin-bottom:15px;">Sistem Informasi Manajemen</br>Keanggotaan Relawan BSMI Jawa Timur</p>
+    <p style="font-size:14px;font-weight:normal;text-align:center;width:300px;margin-top:0px;margin-bottom:15px;">Selamat Datang di Platform</br>Relawan BSMI Jawa Timur</p>
     <button class="button button-fill login-screen-open" data-login-screen="#my-login-screen" style="width:100px;">LOGIN</button>
     <p style="font-size:12px;color:grey;tex-align:center">Belum punya akun? <a href="" class="login-screen-open" data-login-screen="#my-aktivasi-screen">Aktivasi</a></p>
   </div>
@@ -1495,8 +1477,8 @@ $$('.my-logout').on('click', function () {
   window.mybsmiuseremail = '';
   window.mybsmiusertoken = '';
   app.popover.close('.profile-popover', false);
-  //$$('#overlay-welcome').css('display','flex');
-  app.preloader.show();
+  $$('#overlay-welcome').css('display','flex');
+  //app.preloader.show();
   window.location.href = 'https://bsmijatim.org'
 });
 ///logout button/////////////////////////

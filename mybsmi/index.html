@@ -1129,7 +1129,7 @@
                 </li>
                 <li class="item-content item-input">
                   <div class="item-inner">
-                    <div class="item-title item-label">Nama *</div>
+                    <div class="item-title item-label">Nama Lengkap dan Gelar *</div>
                     <div class="item-input-wrap">
                       <input type="text" name="nama" placeholder="Nama lengkap dan gelar" required validate>
                     </div>
@@ -1178,6 +1178,22 @@
                                     <option value="Perawat">Perawat</option>
                                     <option value="Apoteker">Apoteker</option>
                                     <option value="Umum">Umum/Non Medis</option>
+                                  </select>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input smart-select smart-select-init" data-open-in="popover">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Golongan Darah *</div>
+                    <div class="item-after">-- Golongan Darah --</div>
+                    <div class="item-input-wrap">
+                                  <select name="golongandarah" required validate>
+                                    <option value="" disabled selected>-- Golongan Darah --</option>
+                                    <option value="A">A</option>
+                                    <option value="B">B</option>
+                                    <option value="AB">AB</option>
+                                    <option value="O">O</option>
+                                    <option value="Tidak Tahu">Tidak Tahu</option>
                                   </select>
                     </div>
                   </div>
@@ -1288,7 +1304,7 @@
 <!--start script------------------------------------------------------------------------------->
 <script>
 var $$ = Dom7;
-var apiuserurl = "https://script.google.com/macros/s/AKfycbzktk9dYm_UrpBAW09ACGi10M4ML_jt3QPq13uP13i85DpDVykMZptYcvKlLCSb4DNwvg/exec";
+var apiuserurl = "https://script.google.com/macros/s/AKfycbzKfJb-xk6EIwhlKdRV7ghOl80_IxeoOQsUW3bIzOUWIzefnVPvnRfkRP-t99r-kNYdvA/exec";
 
 var app = new Framework7({
 el: '#app',

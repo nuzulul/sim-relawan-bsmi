@@ -1069,16 +1069,184 @@
               
             </div>  
           </div>
-          
+
+<!--start aktivasi------------------------------------------------------------------------------->     
+    <form class="login-screen" id="my-aktivasi-screen">
+      <div class="view">
+        <div class="page">
+          <div class="page-content login-screen-content">
+            <div class="login-screen-title">Aktivasi Akun</div>
+            <div class="list">
+              <ul>
+                <li class="item-content item-input"><b>Akun Relawan</b>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Email *</div>
+                    <div class="item-input-wrap">
+                      <input type="email" name="email" placeholder="Alamat email" required validate>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Password *</div>
+                    <div class="item-input-wrap">
+                      <input type="password" name="password" placeholder="Password" minlength="10" required validate>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Konfirm Password *</div>
+                    <div class="item-input-wrap">
+                      <input type="password" name="konfirmpassword" placeholder="Konfirm Password" minlength="10" required validate>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input"><b>Data Relawan</b>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Nama *</div>
+                    <div class="item-input-wrap">
+                      <input type="text" name="nama" placeholder="Nama lengkap dan gelar" required validate>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Jenis Kelamin *</div>
+                    <div class="item-input-wrap smart-select smart-select-init" data-open-in="popover">
+                                  <select name="jeniskelamin" required validate>
+                                    <option value="" disabled selected>-- Jenis Kelamin --</option>
+                                    <option value="Laki-Laki">Laki-laki</option>
+                                    <option value="Perempuan">Perempuan</option>
+                                  </select>-- Jenis Kelamin --
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Tanggal Lahir *</div>
+                    <div class="item-input-wrap">
+                      <input type="text" name="tanggallahir" placeholder="Tanggal Lahir" readonly="readonly" class="calendar-input" required validate>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Alamat Lengkap Domisili *</div>
+                    <div class="item-input-wrap">
+                      <input type="text" name="alamatdomisili" placeholder="Alamat Lengkap Domisili" required validate>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Profesi *</div>
+                    <div class="item-input-wrap smart-select smart-select-init" data-open-in="popover">
+                                  <select name="profesi" required validate>
+                                    <option value="" disabled selected>-- Profesi --</option>
+                                    <option value="Dokter Spesialis">Dokter Spesialis</option>
+                                    <option value="Dokter Umum">Dokter Umum</option>
+                                    <option value="Dokter Gigi">Dokter Gigi</option>
+                                    <option value="Bidan">Bidan</option>
+                                    <option value="Perawat">Perawat</option>
+                                    <option value="Apoteker">Apoteker</option>
+                                    <option value="Umum">Umum/Non Medis</option>
+                                  </select>-- Profesi --
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">No HP/Whatsapp *</div>
+                    <div class="item-input-wrap">
+                      <input type="text" name="nohp" placeholder="No HP/Whatsapp" required validate>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Anggota Cabang *</div>
+                    <div class="item-input-wrap smart-select smart-select-init" data-open-in="popover">
+                                  <select name="cabang" required validate>
+                                    <option value="" disabled selected>-- ZONA 1 --</option>
+                                    <option value="BSMI Surabaya">BSMI Surabaya</option>
+                                    <option value="BSMI Sidoarjo">BSMI Sidoarjo</option>
+                                    <option value="BSMI KAB Mojokerto">BSMI KAB Mojokerto</option>
+                                    <option value="BSMI KOTA Mojokerto">BSMI KOTA Mojokerto</option>
+                                    <option value="BSMI Lamongan">BSMI Lamongan</option>
+                                    <option value="BSMI Gresik">BSMI Gresik</option>
+                                    <option value="BSMI Tuban">BSMI Tuban</option>
+                                    <option value="BSMI Bojonegoro">BSMI Bojonegoro</option>
+                                    <option value="BSMI KOTA Pasuruan">BSMI KOTA Pasuruan</option>
+                                    <option value="BSMI KAB Pasuruan">BSMI KAB Pasuruan</option>
+                                    <option value="" disabled >-- ZONA 2 --</option>
+                                    <option value="BSMI Bangkalan">BSMI Bangkalan</option>
+                                    <option value="BSMI Sampang">BSMI Sampang</option>
+                                    <option value="BSMI Pamekasan">BSMI Pamekasan</option>
+                                    <option value="BSMI Sumenep">BSMI Sumenep</option>
+                                    <option value="" disabled >-- ZONA 3 --</option>
+                                    <option value="BSMI KOTA Probolinggo">BSMI KOTA Probolinggo</option>
+                                    <option value="BSMI KAB Probolinggo">BSMI KAB Probolinggo</option>
+                                    <option value="BSMI Jember">BSMI Jember</option>
+                                    <option value="BSMI Lumajang">BSMI Lumajang</option>
+                                    <option value="BSMI Bondowoso">BSMI Bondowoso</option>
+                                    <option value="BSMI Situbondo">BSMI Situbondo</option>
+                                    <option value="BSMI Banyuwangi">BSMI Banyuwangi</option>
+                                    <option value="" disabled >-- ZONA 4 --</option>
+                                    <option value="BSMI Jombang">BSMI Jombang</option>
+                                    <option value="BSMI KOTA Malang">BSMI KOTA Malang</option>
+                                    <option value="BSMI KAB Malang">BSMI KAB Malang</option>
+                                    <option value="BSMI Batu">BSMI Batu</option>
+                                    <option value="BSMI KOTA Kediri">BSMI KOTA Kediri</option>
+                                    <option value="BSMI KAB Kediri">BSMI KAB Kediri</option>
+                                    <option value="BSMI KOTA Blitar">BSMI KOTA Blitar</option>
+                                    <option value="BSMI KAB Blitar">BSMI KAB Blitar</option>
+                                    <option value="BSMI Tulungagung">BSMI Tulungagung</option>
+                                    <option value="" disabled >-- ZONA 5 --</option>
+                                    <option value="BSMI KOTA Madiun">BSMI KOTA Madiun</option>
+                                    <option value="BSMI KAB Madiun">BSMI KAB Madiun</option>
+                                    <option value="BSMI Ngawi">BSMI Ngawi</option>
+                                    <option value="BSMI Magetan">BSMI Magetan</option>
+                                    <option value="BSMI Ponorogo">BSMI Ponorogo</option>
+                                    <option value="BSMI Pacitan">BSMI Pacitan</option>
+                                    <option value="BSMI Trenggalek">BSMI Trenggalek</option>
+                                    <option value="BSMI Nganjuk">BSMI Nganjuk</option>
+                                  </select>-- Anggota Cabang --
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Tahun Bergabung *</div>
+                    <div class="item-input-wrap">
+                      <input type="text" name="tahun" placeholder="Tahun Bergabung" required validate>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="list">
+              <div class="block-footer"><a href="#" class="button button-raised button-fill register-button">AKTIVASI</a><a href="#" class="item-link list-button close-login-button login-screen-close" data-login-screen="#my-aktivasi-screen">Batal</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>          
+<!--end register------------------------------------------------------------------------------->     
+
           
 <!--start overlay------------------------------------------------------------------------------->          
 <div style="background: rgba(0, 0, 0, 0.8);position: fixed;z-index: 1000;align-items: center;justify-content: center;display: flex;bottom: 0;left: 0;right: 0;top: 0;    background-image: url(https://1.bp.blogspot.com/-YozdStDZzBQ/XmILfAwrWAI/AAAAAAAADfY/Kn9onA-eB1EJVjrcKAjk_jdsVa-MloVigCLcBGAsYHQ/s1600/CGyYOoiUkAAoDe3.jpg);background-size: cover;background-position: center top;">
   <div style="background:#fff;display: flex;flex-direction:column;margin: auto;align-items: center;justify-content: center;padding:20px 20px;">
     <img src="https://1.bp.blogspot.com/-I9V1NyLtG68/XmJRZ_RhTJI/AAAAAAAADgI/wJiuL0Wnjvc2jyoV8AMRsIp1YvSQs1QXwCLcBGAsYHQ/s1600/Logo%2BBSMI%2B%2528vector%2529.png" style="width:200px;">
     <p style="font-size:16px;font-weight:bold;text-align:center;width:300px;margin-top:15px;margin-bottom:2px;">MyBSMI</p>
-    <p style="font-size:14px;font-weight:normal;text-align:center;width:300px;margin-top:0px;margin-bottom:15px;">Sistem Informasi Manajemen</br>Relawan BSMI Jawa Timur</p>
-    <button class="button button-fill color-red" style="width:100px;">LOGIN</button>
-    <p style="font-size:12px;color:grey;tex-align:center">Belum punya akun? <a href="">Aktivasi</a></p>
+    <p style="font-size:14px;font-weight:normal;text-align:center;width:300px;margin-top:0px;margin-bottom:15px;">Sistem Informasi Manajemen</br>Keanggotaan Relawan BSMI Jawa Timur</p>
+    <button class="button button-fill" style="width:100px;">LOGIN</button>
+    <p style="font-size:12px;color:grey;tex-align:center">Belum punya akun? <a href="" class="login-screen-open" data-login-screen="#my-aktivasi-screen">Aktivasi</a></p>
   </div>
 </div>
 <!--end overlay------------------------------------------------------------------------------->
@@ -1112,6 +1280,13 @@
     fixCols();
     $(window).on('resize', fixCols);
 
+
+    //aktivasi kalender
+    var calendar = app.calendar.create({
+      inputEl: '.calendar-input',
+      dateFormat: 'd-m-yyyy',
+      openIn: 'popover'
+    });
   </script>
 <!--end script------------------------------------------------------------------------------->  
 </body>

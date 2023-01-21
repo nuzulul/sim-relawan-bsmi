@@ -1361,7 +1361,7 @@ $$('#my-aktivasi-screen .register-button').on('click', function () {
     data : { command: 'aktivasi', email: email,password: password, nama: nama, jeniskelamin: jeniskelamin, tanggallahir: tanggallahir, alamatdomisili: alamatdomisili, profesi: profesi, nohp: nohp, cabang: cabang, tahun: tahun  }, 
     success: function (data, status, xhr)
       {
-        console.log(data);
+        //console.log(data);
         app.preloader.hide();
 
         var status = JSON.parse(data).status;
@@ -1409,7 +1409,7 @@ $$('#my-login-screen .login-button').on('click', function () {
     data : { command: 'login', email: email,password: password}, 
     success: function (data, status, xhr)
       {
-        console.log(data);
+        //console.log(data);
         app.preloader.hide();
                 
         var status = JSON.parse(data).status;
@@ -1441,6 +1441,11 @@ $$('#my-login-screen .login-button').on('click', function () {
       },
   })
 });
+document.getElementById('my-login-screen').onkeydown = function(e){
+   if(e.keyCode == 13){
+     $$('#my-login-screen .login-button').click();
+   }
+};
 //end form-login/////////////////////////////
 
 //start check session/////////////////////////
@@ -1456,7 +1461,7 @@ if (localStorage.getItem("mybsmiuser") !== null) {
     data : { command: 'loginwithtoken', email: email, password: token}, 
     success: function (data, status, xhr)
       {
-        console.log(data);
+        //console.log(data);
         app.preloader.hide();
                 
         var status = JSON.parse(data).status;
@@ -1490,8 +1495,9 @@ $$('.my-logout').on('click', function () {
   window.mybsmiuseremail = '';
   window.mybsmiusertoken = '';
   app.popover.close('.profile-popover', false);
-  $$('#overlay-welcome').css('display','flex');
-  
+  //$$('#overlay-welcome').css('display','flex');
+  app.preloader.show();
+  window.location.href = '/'
 });
 ///logout button/////////////////////////
 </script>

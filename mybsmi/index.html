@@ -278,7 +278,7 @@
             <div class="title">Dashboard</div>
             <div class="right">
               <a class="link popover-open" data-popover=".profile-popover">
-                <span class="margin-right-half"><b>Nuzulul</b></span>
+                <span class="margin-right-half">User</span>
                 <img src="https://i.pravatar.cc/56?u=9" class="avatar">
               </a>
             </div>
@@ -292,8 +292,8 @@
         </div>
         <div class="popover profile-popover">
           <div class="popover-inner">
-            <h3 class="text-align-center">Nuzulul Zulkarnain</h3>
-            <div class="list no-hairlines no-hairlines-between">
+            <h3 class="text-align-center">User</h3>
+            <!--<div class="list no-hairlines no-hairlines-between">
               <ul>
                 <li>
                   <a href="#" class="item-link item-content">
@@ -316,12 +316,12 @@
                   </a>
                 </li>
               </ul>
-            </div>
+            </div>-->
 
             <div class="list no-hairlines no-hairlines-between margin-bottom">
               <ul>
                 <li>
-                  <a href="#" class="item-link item-content">
+                  <a href="#" class="item-link item-content my-logout">
                     <div class="item-media">
                       <i class="icon f7-icons">exit_fill</i>
                     </div>
@@ -1070,6 +1070,45 @@
             </div>  
           </div>
 
+        </div>
+      </div>
+
+<!--start login------------------------------------------------------------------------------->
+    <form class="login-screen" id="my-login-screen">
+      <div class="view">
+        <div class="page">
+          <div class="page-content login-screen-content">
+            <div class="login-screen-title">Login</div>
+            <div class="list">
+              <ul>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Email</div>
+                    <div class="item-input-wrap">
+                      <input type="email" name="email" placeholder="Alamat email" required validate>
+                    </div>
+                  </div>
+                </li>
+                <li class="item-content item-input">
+                  <div class="item-inner">
+                    <div class="item-title item-label">Password</div>
+                    <div class="item-input-wrap">
+                      <input type="password" name="password" placeholder="Password" minlength="10" required validate>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="list">
+              <div class="block-footer"><a href="#" class="button button-raised button-fill login-button">Login</a><a href="#" class="item-link list-button login-screen-close" data-login-screen="#my-login-screen">Batal</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form> 
+<!--start login------------------------------------------------------------------------------->
+
+
 <!--start aktivasi------------------------------------------------------------------------------->     
     <form class="login-screen" id="my-aktivasi-screen">
       <div class="view">
@@ -1114,15 +1153,15 @@
                     </div>
                   </div>
                 </li>
-                <li class="item-content item-input">
+                <li class="item-content item-input smart-select smart-select-init" data-open-in="popover">
                   <div class="item-inner">
                     <div class="item-title item-label">Jenis Kelamin *</div>
-                    <div class="item-input-wrap smart-select smart-select-init" data-open-in="popover">
+                    <div class="item-input-wrap">
                                   <select name="jeniskelamin" required validate>
                                     <option value="" disabled selected>-- Jenis Kelamin --</option>
                                     <option value="Laki-Laki">Laki-laki</option>
                                     <option value="Perempuan">Perempuan</option>
-                                  </select>-- Jenis Kelamin --
+                                  </select>
                     </div>
                   </div>
                 </li>
@@ -1142,10 +1181,10 @@
                     </div>
                   </div>
                 </li>
-                <li class="item-content item-input">
+                <li class="item-content item-input smart-select smart-select-init" data-open-in="popover">
                   <div class="item-inner">
                     <div class="item-title item-label">Profesi *</div>
-                    <div class="item-input-wrap smart-select smart-select-init" data-open-in="popover">
+                    <div class="item-input-wrap">
                                   <select name="profesi" required validate>
                                     <option value="" disabled selected>-- Profesi --</option>
                                     <option value="Dokter Spesialis">Dokter Spesialis</option>
@@ -1155,7 +1194,7 @@
                                     <option value="Perawat">Perawat</option>
                                     <option value="Apoteker">Apoteker</option>
                                     <option value="Umum">Umum/Non Medis</option>
-                                  </select>-- Profesi --
+                                  </select>
                     </div>
                   </div>
                 </li>
@@ -1167,12 +1206,13 @@
                     </div>
                   </div>
                 </li>
-                <li class="item-content item-input">
+                <li class="item-content item-input smart-select smart-select-init" data-open-in="popover">
                   <div class="item-inner">
                     <div class="item-title item-label">Anggota Cabang *</div>
-                    <div class="item-input-wrap smart-select smart-select-init" data-open-in="popover">
+                    <div class="item-input-wrap">
                                   <select name="cabang" required validate>
-                                    <option value="" disabled selected>-- ZONA 1 --</option>
+                                    <option value="" disabled selected>-- Cabang --</option>
+                                    <option value="" disabled>-- ZONA 1 --</option>
                                     <option value="BSMI Surabaya">BSMI Surabaya</option>
                                     <option value="BSMI Sidoarjo">BSMI Sidoarjo</option>
                                     <option value="BSMI KAB Mojokerto">BSMI KAB Mojokerto</option>
@@ -1215,7 +1255,7 @@
                                     <option value="BSMI Pacitan">BSMI Pacitan</option>
                                     <option value="BSMI Trenggalek">BSMI Trenggalek</option>
                                     <option value="BSMI Nganjuk">BSMI Nganjuk</option>
-                                  </select>-- Anggota Cabang --
+                                  </select>
                     </div>
                   </div>
                 </li>
@@ -1240,20 +1280,18 @@
 
           
 <!--start overlay------------------------------------------------------------------------------->          
-<div style="background: rgba(0, 0, 0, 0.8);position: fixed;z-index: 1000;align-items: center;justify-content: center;display: flex;bottom: 0;left: 0;right: 0;top: 0;    background-image: url(https://1.bp.blogspot.com/-YozdStDZzBQ/XmILfAwrWAI/AAAAAAAADfY/Kn9onA-eB1EJVjrcKAjk_jdsVa-MloVigCLcBGAsYHQ/s1600/CGyYOoiUkAAoDe3.jpg);background-size: cover;background-position: center top;">
+<div id="overlay-welcome" style="background: rgba(0, 0, 0, 0.8);position: fixed;z-index: 10000;align-items: center;justify-content: center;display: flex;bottom: 0;left: 0;right: 0;top: 0;    background-image: url(https://1.bp.blogspot.com/-YozdStDZzBQ/XmILfAwrWAI/AAAAAAAADfY/Kn9onA-eB1EJVjrcKAjk_jdsVa-MloVigCLcBGAsYHQ/s1600/CGyYOoiUkAAoDe3.jpg);background-size: cover;background-position: center top;">
   <div style="background:#fff;display: flex;flex-direction:column;margin: auto;align-items: center;justify-content: center;padding:20px 20px;">
     <img src="https://1.bp.blogspot.com/-I9V1NyLtG68/XmJRZ_RhTJI/AAAAAAAADgI/wJiuL0Wnjvc2jyoV8AMRsIp1YvSQs1QXwCLcBGAsYHQ/s1600/Logo%2BBSMI%2B%2528vector%2529.png" style="width:200px;">
     <p style="font-size:16px;font-weight:bold;text-align:center;width:300px;margin-top:15px;margin-bottom:2px;">MyBSMI</p>
     <p style="font-size:14px;font-weight:normal;text-align:center;width:300px;margin-top:0px;margin-bottom:15px;">Sistem Informasi Manajemen</br>Keanggotaan Relawan BSMI Jawa Timur</p>
-    <button class="button button-fill" style="width:100px;">LOGIN</button>
+    <button class="button button-fill login-screen-open" data-login-screen="#my-login-screen" style="width:100px;">LOGIN</button>
     <p style="font-size:12px;color:grey;tex-align:center">Belum punya akun? <a href="" class="login-screen-open" data-login-screen="#my-aktivasi-screen">Aktivasi</a></p>
   </div>
 </div>
 <!--end overlay------------------------------------------------------------------------------->
 
 
-        </div>
-      </div>
     </div>
   </div>
 
@@ -1263,31 +1301,200 @@
   <script src="https://unpkg.com/framework7/framework7-bundle.min.js"></script>
   <script src="https://unpkg.com/chart.js"></script>
 <!--start script------------------------------------------------------------------------------->
-  <script>
-    var $ = Dom7;
+<script>
+var $$ = Dom7;
+var apiuserurl = "https://script.google.com/macros/s/AKfycbzzn44JQmleXFMlUWh0uoCZyWKPye_OQc-PGq7PRzW3nvV86Dleszcwd43GvhXZVdIn3w/exec";
 
-    var app = new Framework7({
-      el: '#app',
-      theme: 'aurora',
-    });
+var app = new Framework7({
+el: '#app',
+theme: 'aurora',
+});
 
-    // Fix col sizes
-    function fixCols() {
-      setTimeout(function() {
-        $('.events-col').css('height', $('.charts-col').height() + 'px');
-      });
-    }
-    fixCols();
-    $(window).on('resize', fixCols);
+// Fix col sizes
+function fixCols() {
+setTimeout(function() {
+$$('.events-col').css('height', $$('.charts-col').height() + 'px');
+});
+}
+fixCols();
+$$(window).on('resize', fixCols);
 
 
-    //aktivasi kalender
-    var calendar = app.calendar.create({
-      inputEl: '.calendar-input',
-      dateFormat: 'd-m-yyyy',
-      openIn: 'popover'
-    });
-  </script>
+//aktivasi kalender///////////////////////////
+var calendar = app.calendar.create({
+inputEl: '.calendar-input',
+dateFormat: 'd-m-yyyy',
+openIn: 'popover'
+});
+//aktivasi kalender///////////////////////////
+
+//form-aktivasi/////////////////////////////
+$$('#my-aktivasi-screen .register-button').on('click', function () {
+
+  if (!$$('#my-aktivasi-screen')[0].checkValidity()) {
+        //console.log('Check Validity!');
+        return;
+  }
+
+  var email = $$('#my-aktivasi-screen [name="email"]').val();
+  var password = $$('#my-aktivasi-screen [name="password"]').val();
+  var konfirmpassword = $$('#my-aktivasi-screen [name="konfirmpassword"]').val();
+  var nama = $$('#my-aktivasi-screen [name="nama"]').val();
+  var jeniskelamin = $$('#my-aktivasi-screen [name="jeniskelamin"]').val();
+  var tanggallahir = $$('#my-aktivasi-screen [name="tanggallahir"]').val();
+  var alamatdomisili = $$('#my-aktivasi-screen [name="alamatdomisili"]').val();
+  var profesi = $$('#my-aktivasi-screen [name="profesi"]').val();
+  var nohp = $$('#my-aktivasi-screen [name="nohp"]').val();
+  var cabang = $$('#my-aktivasi-screen [name="cabang"]').val();
+  var tahun = $$('#my-aktivasi-screen [name="tahun"]').val();
+  
+  if(password != konfirmpassword) 
+  {
+    app.dialog.alert('Password dan Konfirm Password Harus Sama','Terjadi Kesalahan');
+    return;
+  }
+  app.preloader.show();
+  app.request({
+    url: apiuserurl,
+    method: 'POST',
+    cache: false,
+    data : { command: 'aktivasi', email: email,password: password, nama: nama, jeniskelamin: jeniskelamin, tanggallahir: tanggallahir, alamatdomisili: alamatdomisili, profesi: profesi, nohp: nohp, cabang: cabang, tahun: tahun  }, 
+    success: function (data, status, xhr)
+      {
+        console.log(data);
+        app.preloader.hide();
+
+        var status = JSON.parse(data).status;
+        var data = JSON.parse(data).data;
+        if (status == "success")
+        {
+          app.loginScreen.close('#my-aktivasi-screen');
+          $$('#my-aktivasi-screen')[0].reset();
+          //$$('#overlay-welcome').hide();
+          app.dialog.alert('Aktivasi akun anda berhasil','Berhasil');
+        }
+        else if (status == "failed")
+        {
+          app.dialog.alert(data,'Terjadi Kesalahan');
+        }
+        else
+        {
+          app.dialog.alert('Tidak dapat memproses data','Terjadi Kesalahan');
+        }
+      },
+    error: function (xhr, status, message)
+      {
+        console.log(message);
+        app.preloader.hide();
+        app.dialog.alert('Tidak dapat memproses data','Terjadi Kesalahan');
+      },
+  })
+  
+});
+//end form aktivasi//////////////////////////
+
+//start form-login/////////////////////////////
+$$('#my-login-screen .login-button').on('click', function () {
+  if (!$$('#my-login-screen')[0].checkValidity()) {
+        //console.log('Check Validity!');
+        return;
+  }
+  var email = $$('#my-login-screen [name="email"]').val();
+  var password = $$('#my-login-screen [name="password"]').val();
+  app.preloader.show();
+  app.request({
+    url: apiuserurl,
+    method: 'POST',
+    cache: false,
+    data : { command: 'login', email: email,password: password}, 
+    success: function (data, status, xhr)
+      {
+        console.log(data);
+        app.preloader.hide();
+                
+        var status = JSON.parse(data).status;
+        var data = JSON.parse(data).data;
+        if (status == "success")
+        {
+          app.loginScreen.close('#my-login-screen');
+          $$('#my-login-screen')[0].reset();
+          $$('#overlay-welcome').hide();
+          var json = {email:email,token:data};
+          window.mybsmiuseremail = email;
+          window.mybsmiusertoken = data;
+          window.localStorage["mybsmiuser"] = JSON.stringify(json);
+        }
+        else if (status == "failed")
+        {
+          app.dialog.alert(data,'Terjadi Kesalahan');
+        }
+        else
+        {
+          app.dialog.alert('Tidak dapat memproses data','Terjadi Kesalahan');
+        }
+      },
+    error: function (xhr, status, message)
+      {
+        console.log(message);
+        app.preloader.hide();
+        app.dialog.alert('Tidak dapat memproses data','Terjadi Kesalahan');
+      },
+  })
+});
+//end form-login/////////////////////////////
+
+//start check session/////////////////////////
+if (localStorage.getItem("mybsmiuser") !== null) {
+  var json = window.localStorage["mybsmiuser"];
+  var email = JSON.parse(json).email;
+  var token = JSON.parse(json).token
+  app.preloader.show();
+  app.request({
+    url: apiuserurl,
+    method: 'POST',
+    cache: false,
+    data : { command: 'loginwithtoken', email: email, password: token}, 
+    success: function (data, status, xhr)
+      {
+        console.log(data);
+        app.preloader.hide();
+                
+        var status = JSON.parse(data).status;
+        var data = JSON.parse(data).data;
+        if (status == "success")
+        {
+          $$('#overlay-welcome').hide();
+          window.mybsmiuseremail = email;
+          window.mybsmiusertoken = token;
+        }
+        else if (status == "failed")
+        {
+          localStorage.removeItem("mybsmiuser");
+        }
+        else
+        {
+        }
+      },
+    error: function (xhr, status, message)
+      {
+        console.log(message);
+        app.preloader.hide();
+      },
+  })
+} 
+//end check session///////////////////////////
+
+///logout button/////////////////////////
+$$('.my-logout').on('click', function () {
+  localStorage.removeItem("mybsmiuser");
+  window.mybsmiuseremail = '';
+  window.mybsmiusertoken = '';
+  app.popover.close('.profile-popover', false);
+  $$('#overlay-welcome').css('display','flex');
+  
+});
+///logout button/////////////////////////
+</script>
 <!--end script------------------------------------------------------------------------------->  
 </body>
 </html>
